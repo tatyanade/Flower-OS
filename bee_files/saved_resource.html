@@ -2,6 +2,27 @@
 <!-- saved from url=(0025)http://morgane.github.io/ -->
 <html>
   <head>
+
+
+      <style>
+      #myDIV {
+          height: 250px;
+          width: 250px;
+          overflow: auto;
+      }
+
+      #logcontent {
+          height: 800px;
+          width: 200px;
+      }
+      </style>
+
+
+
+
+
+
+
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
       <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -113,7 +134,7 @@
 
 
 
-          $("#hResearchFolder").click(function(){
+          $("#hResearchFolder").dblclick(function(){
               $("researchFolder").hide();
           });
           $("#sResearchFolder").click(function(){
@@ -429,12 +450,12 @@
 
           <jobApp>
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
-              <h1>Job Application</h1>
+              <h1>Job Application<button id="hJobApp">x</button></h1>
 
-              <p> Apply Now </p>
+              <object data="./assets/jobApp.pdf" type="application/pdf" width="400" height="300">
+                         alt : <a href="test.pdf">test.pdf</a>
+                  </object>
               
-              <p> <button id="hJobApp">Close Application</button></p>
-
             </div>
           </jobApp>
 
@@ -452,10 +473,8 @@
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
               <h1>Graph <button id="hPopulationGraph">x</button></h1>
 
-              <p>.......--</p>
-              <p>...../</p>
-              <p>.../</p>
-              <p>/</p>
+              <p>                  <img src="./assets/graph.png" width="400">
+</p>
             </div>
           </populationGraph>
 
@@ -463,17 +482,21 @@
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
               <h1>How to Be human </h1>
 
-              <p>....</p>
+                  <object data="howToHuman.pdf" type="application/pdf" width="400" height="200">
+                         alt : <a href="test.pdf">test.pdf</a>
+                  </object>
+
+
               <button id="hHowToBeHuman">x</button>
             </div>
           </howToBeHuman>
 
           <newDevelopment>
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
-              <h1>New Developments</h1>
+              <h1>New Developments<button id="hNewDevelopment">x</button></h1>
 
-              <p>.Things... have, been happen i n g</p>
-              <button id="hNewDevelopment">x</button>
+              <img src="./assets/advert.png" width="400">
+              
             </div>
           </newDevelopment>
 
@@ -706,9 +729,9 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Inbox </h1>
 
-                Nothing New
-
-                 <button id="hEmail">hide</button>
+                <img src="./assets/bmailEmpty.png" width="400">
+                <p>
+                 <button id="hEmail">link</button></p>
               </div>
           </email>
 
@@ -716,10 +739,7 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Inbox </h1>
                 <p>
-                (P5 window that says "type email here" at the top. Start typing anything and then the email is written for you. The email explains that you are undercover at the pesdicide conpany and that you are a supporter of bees and thier cause, explaining that you were doing your own reserch and were looking for leads.
-                </p>
-                <p>
-                The head of the orginization replies saying hat the honey man has been paying the government to pass legislation to completely exterminate bees, he claims that he is using all the pecdicides for his corn farms but by thier calculations there's not way he could do that w/o damaging his crops. She she ataches a document)
+                      <img src="./assets/email-to-bee-advocate.gif" width="400">
                 </p>
 
 
@@ -731,7 +751,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Inbox </h1>
                 <p>
-                after you close the document another email pops up from tha government)
+                  <img src="./assets/beeAdvocateRep.png" width="400">
+
                 </p>
 
 
@@ -743,11 +764,7 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from government </h1>
                 <p>
-               Don't look at that! 
-
-                -The Government
-
-                (After you exit out of the email then another email pops up from an anonymous person and another email from the government).
+                  <img src="./assets/govEmail1.png" width="400">
                 </p>
 
 
@@ -759,10 +776,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from Anonymous </h1>
                 <p>
-                If you want to know the truth click here.
-
-                (it is signed with a sparkling alien gif) 
-                </p>
+                      <img src="./assets/Consperacy-email-1.gif" width="400">
+                </p> 
 
 
                  <button id="hEmailEvent4">click here</button>
@@ -773,9 +788,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from government </h1>
                 <p>
-               Don't click on that link from the alien! 
+                  <img src="./assets/govEmail2.png" width="400">
 
-              - The government
                 </p>
 
 
@@ -785,14 +799,10 @@
 
           <emailEvent6>
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
-                <h1>Email from Anonymous </h1>
-                <p>
-                I see you are looking into things. If you want to join our cause of exposing the truth call me on Sykpe. My Skype name is ILoveTheTruth. 
-
-                (Signed with an alien gif)
-
-                (when you click the link yet another email from the government)
-                </p>
+                <h1>From:fuckyougovernment@ho...</h1>
+<p>
+                      <img src="./assets/Consperacy-email-2.gif" width="400">
+                </p> 
 
 
                  <button id="hEmailEvent6">click here</button>
@@ -803,9 +813,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from The Government </h1>
                 <p>
-                 Stop that!
+                  <img src="./assets/govEmail3.png" width="400">
 
-                - The Goverment 
                 </p>
 
 
@@ -817,9 +826,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from The Government </h1>
                 <p>
-                 Hey! Stop that!
+                  <img src="./assets/govEmail4.png" width="400">
 
-                - The Goverment 
                 </p>
 
 
@@ -831,9 +839,8 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Email from The Government </h1>
                 <p>
-                 You know too much...
-
-                - The Goverment 
+                  <img src="./assets/govEmail5.png" width="400">
+ 
                 </p>
 
 
@@ -875,24 +882,29 @@
                <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                   <h1>README.txt </h1>
 
-                 <p> Log 1</p>
-                 <p> We are honnored to accpet this mission from the Queen. We hope we can serve her well. We have an interview with The Corpiration tomorrow. We have picked out my best yellow and black striped tie to wear. </p>
+              <div id="myDIV" >
 
-                  <p> Log 2 </p> 
-                  <p> We've been able to infultrate a one of the big pecidicide conpanies called Pedicide-0H. We have no idea what the 0 and H stand for. We have gotten in as what they call an "unpaid-intern" and have been "interning" there for a week now. Well, unpaid isn't completely acturate. They give me a gallon of pescidices everyday. But it will kill me so We've always just leave it in the parking lot. They have given us an "agricultural aircraft" to fly to work. To my horror, these aircrafts are used to spray pecdicides acrouss large areas. I do not know why they want me to drive it because this is a metropolitian area and I just spray buildings and people on my way to work. My disguesed has worked perectly. They do not suspect a thing. </p>
+                  <div id="logcontent">
 
-                  <p>Log 3</p>
-                  <p>Our duities as an "unpaid intern" include mulptiple tasks, such as, cleaning up trash, answering human's emails and listining to our boss complain. Today, they asked us to "dust crops" in the testing facility. I do not know crops coudl get dusty. I got out my feather duster and did my best, but I got yelled at. </p>
+                     <p> Log 1</p>
+                     <p> We are honnored to accpet this mission from the Queen. We hope we can serve her well. We have an interview with The Corpiration tomorrow. We have picked out my best yellow and black striped tie to wear. </p>
 
-                  <p> Anyway, I have gained access to there their reserch databanks where I can see all thier sinister technologies.</p>
-                 
-                  <p> Log 4 </p>
+                      <p> Log 2 </p> 
+                      <p> We've been able to infultrate a one of the big pecidicide conpanies called Pedicide-0H. We have no idea what the 0 and H stand for. We have gotten in as what they call an "unpaid-intern" and have been "interning" there for a week now. Well, unpaid isn't completely acturate. They give me a gallon of pescidices everyday. But it will kill me so We've always just leave it in the parking lot. They have given us an "agricultural aircraft" to fly to work. To my horror, these aircrafts are used to spray pecdicides acrouss large areas. I do not know why they want me to drive it because this is a metropolitian area and I just spray buildings and people on my way to work. My disguesed has worked perectly. They do not suspect a thing. </p>
 
-                  <p> While the conpanies taxes, we found that there was a sucpiciously large purchase from a conpany called Mr. Corny-Worth’s 'Honey'. Why is honey in quotations? I will have to look more into this conpany. </p>
+                      <p>Log 3</p>
+                      <p>Our duities as an "unpaid intern" include mulptiple tasks, such as, cleaning up trash, answering human's emails and listining to our boss complain. Today, they asked us to "dust crops" in the testing facility. I do not know crops coudl get dusty. I got out my feather duster and did my best, but I got yelled at. </p>
 
-                  <p> Log 5 </p>
+                      <p> Anyway, I have gained access to there their reserch databanks where I can see all thier sinister technologies.</p>
+                     
+                      <p> Log 4 </p>
 
-                  <p> Our colony has been comprimised. Is was bad when we left, but we never imagined it could just end like this... We are the only ones left. We must continue the mission if for nothing but, to honnor the queen.</p>
+                      <p> While the conpanies taxes, we found that there was a sucpiciously large purchase from a conpany called Mr. Corny-Worth’s 'Honey'. Why is honey in quotations? I will have to look more into this conpany. </p>
+
+                      <p> Log 5 </p>
+
+                      <p> Our colony has been comprimised. Is was bad when we left, but we never imagined it could just end like this... We are the only ones left. We must continue the mission if for nothing but, to honnor the queen.</p>
+                    </div></div>
 
                    <button id="hReadme">close readme</button>
                 </div>           
@@ -907,7 +919,7 @@
           <ul>
 
             <li>
-              <img id="sResearchFolder" src="./research_folder.png" height="70" width="70">
+              <img id="sResearchFolder" src="./assets/research_folder.png" height="70" width="70">
             </li>
 
             <li>
