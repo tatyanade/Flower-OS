@@ -82,15 +82,21 @@
               $("internetEvent1").hide();
               $("internetEvent2").hide();
               $("readme").hide();
+              $("ending").hide();
+                            $("skypeEvent3").hide();
+
           });
         </script>
 
     <script>
       $(document).ready(function(){
+
           $("#hEverything").click(function(){
               $("researchFolder").hide();
               $("pesticideArticle").hide();
               $("jobApp").hide();
+                                          $("skypeEvent3").hide();
+
               $("beesWhereAreThey").hide();
               $("populationGraph").hide();
               $("howToBeHuman").hide(); 
@@ -130,11 +136,12 @@
               $("internetEvent1").hide();
               $("internetEvent2").hide();
               $("readme").hide();
+              $("ending").hide();
           });
 
 
 
-          $("#hResearchFolder").dblclick(function(){
+          $("#hResearchFolder").click(function(){
               $("researchFolder").hide();
           });
           $("#sResearchFolder").click(function(){
@@ -345,10 +352,27 @@
               $("internetEvent1").show();
           });
 
+          $("#hSkypeEvent2").click(function(){
+              $("skypeEvent2").hide();
+              $("skypeEvent3").show();
+                        });
+
+          $("#hSkypeEvent3").click(function(){
+              $("skypeEvent3").hide();
+              $("ending").show();
+                        });
+
+          $("#hEnd").click(function(){
+              $("ending").hide();
+          });
 
           $("#hInternetEvent1").click(function(){
               $("internetEvent1").hide();
               $("emailEvent1").show();
+          });
+
+                    $("#hInternetEvent2").click(function(){
+              $("internetEvent2").hide();
           });
 
           $("#hEmailEvent1").click(function(){
@@ -374,6 +398,8 @@
           $("#hEmailEvent4").click(function(){
               $("emailEvent4").hide();
               $("emailEvent6").show();
+                            $("internetEvent2").show();
+
           });
 
           $("#hEmailEvent6").click(function(){
@@ -381,7 +407,16 @@
               $("emailEvent8").show();
               $("skypeEvent2").show();              
           });
+
+          $("#hEmailEvent7").click(function(){
+              $("emailEvent7").hide();            
+          });
+
+                    $("#hEmailEvent8").click(function(){
+              $("emailEvent8").hide();            
+          });
       }); 
+
     </script>
 
 
@@ -420,6 +455,7 @@
 
               <p>Folder Contents:</p>
 
+
               <p><button id="sPesticideArticle">Pesticides</button></p> 
               <p><button id="sJobApp">Job Application</button></p>      
               <p><button id="sBeesWhereAreThey">"Bees? Where are they?"</button></p>
@@ -439,9 +475,7 @@
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: 36px;">
               <h1>Pesticides</h1>
 
-              <p> pesticides pesticides pesticides </p>
-
-              <p> pesticides pesticides </p>
+              <img src="./assets/ban.png" width="400">
               
               <p> <button id="hPesticideArticle">Close Article</button></p>
 
@@ -463,9 +497,9 @@
             <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
               <h1>Bees? Where are They <button id="hBeesWhereAreThey">x</button></h1>
 
-              <img class="artboard1-img" src="./artboard1.png" alt="Artboard 1">
+              <img class="artboard1-img" src="./assets/fuck.png" alt="Artboard 1">
 
-              <p> </p>
+              
             </div>
           </beesWhereAreThey>
 
@@ -705,8 +739,10 @@
           <skypeEvent1>
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Skype</h1>
-
+                   <video width="700" height="450" controls="controls" poster="image" preload="true">
+     <source src="./assets/bossCall.mp4" type="video/mp4" />
                 You get a skype call from your boss. She informs you that there are some prostesters outside and to do some reaserch on them so she can make meen tweets about them. It is here that you see that you are a bunch of bees. She sends you a link in the Skype chat
+   </video>
 
                  <button id="hSkypeEvent1">link</button>
               </div>
@@ -716,14 +752,33 @@
           <skypeEvent2>
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Skype</h1>
-
-                (Have skype call with man. He starts telling you about the atrocity of this mind controle honey, but then he says an incorect fact about bees. and then he accidentally reveals that he knows oyu are a bucn of bees. And then he accidently reaveals that he IS and alien and the Gif is actually a photo of him. He informs you in the chat that "Oh god thier listening in." "I've said too much" "THEY'RE COMING" "EXIT THE SKYPE CALL NOW")
+                   <video width="700" height="450" controls="controls" poster="image" preload="true">
+     <source src="./assets/conspiracyCall.mp4" type="video/mp4" />
+               (Have skype call with man. He starts telling you about the atrocity of this mind controle honey, but then he says an incorect fact about bees. and then he accidentally reveals that he knows oyu are a bucn of bees. And then he accidently reaveals that he IS and alien and the Gif is actually a photo of him. He informs you in the chat that "Oh god thier listening in." "I've said too much" "THEY'RE COMING" "EXIT THE SKYPE CALL NOW")
 
                 (when you exit the skype call you get another email your desktop also starts acting wonky)
+   </video>
+
+                
 
                  <button id="hSkypeEvent2">close</button>
               </div>
           </skypeEvent2>
+
+
+                    <skypeEvent3>
+              <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
+                <h1>Skype</h1>
+                   <video width="700" height="450" controls="controls" poster="image" preload="true">
+     <source src="./assets/alienCall.mp4" type="video/mp4" />
+
+   </video>
+
+                
+
+                 <button id="hSkypeEvent3">close</button>
+              </div>
+          </skypeEvent3>
 
           <email>
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
@@ -805,7 +860,7 @@
                 </p> 
 
 
-                 <button id="hEmailEvent6">click here</button>
+                 <button id="hEmailEvent6">skype</button>
               </div>
           </emailEvent6>
 
@@ -862,7 +917,7 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Browser </h1>
 
-                (leads to bee advocate website. With a link to email the head of the orginization at the bottom.)
+                   <img src="./assets/Savethosebees.png" width="400">
 
                  <button id="hInternetEvent1">Email Link</button>
               </div>
@@ -872,9 +927,9 @@
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>Browser </h1>
 
-                (It links you to a website for a consperacy theorists who belive that the honey man is killing the bees not only for money but for mind controle! The man who uses the alien gif has his info linked at the bottom of the screne.)
+                   <img src="./assets/eyes.png" width="400">
 
-                 <button id="sEmailEvent67">info</button>
+                 <button id="hInternetEvent2">info</button>
               </div>
           </internetEvent2>
 
@@ -911,6 +966,17 @@
           </readme>
 
 
+<ending>
+              <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
+                <h1>ITS OVER</h1>
+
+              <img src="./assets/end.gif" width="1400">
+
+
+                 <button id="hEnd">close</button>
+              </div>
+          </ending>
+
 
         </div>
 
@@ -927,10 +993,6 @@
             </li>
 
             <li>
-               <img id="sDrawingProgram" src="./paint.png" height="50">
-            </li>
-
-            <li>
                <img id="sSkype" src="./skype.png" height="70" width="70">
             </li>
 
@@ -943,7 +1005,7 @@
 
             <readmeButton>
             <li>
-              <button id="sReadme">README.txt</button>
+              <img id="sReadme" src="./assets/doc.png" height="50">
             </li>                                 
             </readmeButton>
 
@@ -957,7 +1019,7 @@
 
 
 
-
+          
 
 
 
