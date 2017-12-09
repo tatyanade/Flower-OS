@@ -83,6 +83,10 @@
               $("internetEvent2").hide();
               $("readme").hide();
               $("ending").hide();
+              $("ending2").hide();
+                            $("ending3").hide();
+              $("ending4").hide();
+
                             $("skypeEvent3").hide();
 
           });
@@ -137,6 +141,11 @@
               $("internetEvent2").hide();
               $("readme").hide();
               $("ending").hide();
+              $("ending2").hide();
+                                          $("ending3").hide();
+              $("ending4").hide();
+
+
           });
 
 
@@ -364,6 +373,7 @@
 
           $("#hEnd").click(function(){
               $("ending").hide();
+              $("ending2").show();
           });
 
           $("#hInternetEvent1").click(function(){
@@ -415,7 +425,21 @@
                     $("#hEmailEvent8").click(function(){
               $("emailEvent8").hide();            
           });
+
+
+          $("#hEnd2").click(function(){
+              $("ending2").hide();
+              $("ending4").show();
+          });
+
+                    $("#hEnd3").click(function(){
+              $("ending3").hide();
+          });
+
       }); 
+
+
+
 
     </script>
 
@@ -966,7 +990,7 @@
           </readme>
 
 
-<ending>
+          <ending>
               <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
                 <h1>ITS OVER</h1>
 
@@ -978,7 +1002,76 @@
           </ending>
 
 
-        </div>
+
+          <ending2>
+
+                                        <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
+                              <h1>chat                   <button id="hEnd2">x</button>
+              </h1>
+
+                          <img src="./assets/beeChatgovernment.gif" width="500">
+
+
+                            </div>
+            
+          </ending2>
+
+
+
+
+          <ending3>
+
+                                <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
+                      <h1>!!! <button id="hEnd3">x</button></h1>
+
+                  <img src="./assets/alien.gif" width="600">
+
+
+                    </div>
+                  
+          </ending3>
+
+        <ending4>
+
+          <div class="draggable ui-draggable ui-draggable-handle" style="position: relative; left: 219px; top: -86px;">
+                          <h1>README.txt </h1>
+
+                      <div id="myDIV" >
+
+                          <div id="logcontent">
+                                <p>
+                                It’s true. The alien story is yet another cover up, for the fact that the government is actually, just a bunch of bees. But oh young bees it goes so much deeper than that. 
+                                </p><p>
+                                You see, humans they….
+                                </p><p>
+
+                                They don’t actually exist. 
+                                </p><p>
+
+                                Every human is just secretly a bunch of bees pretending to be a human.
+                                </p><p>
+
+
+                                Long long long ago there was one hive The Original Hive that was ruled by a strict queen. Unsatisfied with their way of living, there were a cult of bees who wanted to be ruled by money and the rich instead of a queen. The bees needed a way to escape the hive without being caught by the queen’s recon team. They disguised themselves as new creatures called “people” to live out their lives. They even wrote a completely false history for the human race. 
+                                </p><p>
+
+                                The Original Hive has long been disbanded and the bees living as humans have long forgotten this story. We use the fabrication of the “human” to keep citizens under our control. They are very self-conscious about being human and not having their cover blown, but you see, “human” is something we made up. If the citizens ever do something we don’t like, we simply tell them “that isn't very human of you” and they do as we say. 
+                                </p><p>
+
+                                You are probably still wondering,
+                                why are the bees disappearing? As our nation of fake humans grows and makes it harder for animals in the wild to live. Many bees are turning to the human lifestyle and “disguising” themselves as humans. That’s why the human population has been growing, but the bee population has been declining. Your boss, the bee advocacy woman, the conspiracy theorist, and yes even me, all just a bunch of bees like you.
+                                </p><p>
+
+                                We will let you live, but only because no one will ever believe you.
+                                </p><p>
+
+                                You now know the truth, but what will you do with it?
+                                </p>
+                            </div></div></div>
+                    
+          </ending4>
+
+          </div>
 
         <!--this is a list, if an icon is removed it all shifts up -->
         <div class="desktop-icons">
@@ -1025,7 +1118,7 @@
 
       <!-- The Start Bar-->
       <footer>
-        <a class="portal"><button id="hEverything">Start</button></a>
+        <a class="portal"><button id="hEverything">(re)Start</button></a>
 
         
 
